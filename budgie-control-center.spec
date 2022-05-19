@@ -9,6 +9,7 @@ Source0:        %{url}/releases/download/v%{version}/%{name}-%{version}.tar.xz
 
 BuildRequires:  pkgconfig(accountsservice)
 BuildRequires:  pkgconfig(cheese)
+BuildRequires:  pkgconfig(cheese-gtk)
 BuildRequires:  pkgconfig(colord-gtk)
 BuildRequires:  pkgconfig(gcr-3)
 BuildRequires:  pkgconfig(gdk-pixbuf-2.0)
