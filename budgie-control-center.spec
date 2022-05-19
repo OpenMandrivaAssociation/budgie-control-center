@@ -122,9 +122,6 @@ rm -rf %{buildroot}%{_datadir}/budgie/cursor-fonts
 chrpath --delete %{buildroot}%{_bindir}/budgie-control-center
 %find_lang %{name} --all-name --with-gnome
 
-%check
-desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
-appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/budgie-control-center.appdata.xml
 
 %files -f %{name}.lang
 %license LICENSE
@@ -138,7 +135,7 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/budgie-co
 %{_datadir}/budgie-control-center/pixmaps
 %{_datadir}/budgie/wm-properties
 %{_datadir}/icons/*
-%{_datadir}/man/man1/budgie-control-center.1*
+#{_datadir}/man/man1/budgie-control-center.1*
 %{_datadir}/metainfo/budgie-control-center.appdata.xml
 %{_datadir}/pixmaps/budgie-faces
 %{_datadir}/pixmaps/budgie-logo.png
