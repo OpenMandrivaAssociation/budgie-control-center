@@ -1,11 +1,11 @@
 Name:           budgie-control-center
 Version:        1.0.2
-Release:        1%{?dist}
+Release:        1
 Summary:        A fork of GNOME Control Center for the Budgie 10 Series
-
+Group:          Graphical desktop/Budgie
 License:        GPLv2+ and CC-BY-SA
 URL:            https://github.com/BuddiesOfBudgie/budgie-control-center
-Source0:        %{url}/releases/download/v%{version}/%{name}-%{version}.tar.xz
+Source0:        https://github.com/BuddiesOfBudgie/budgie-control-center/releases/download/v%{version}/%{name}-%{version}.tar.xz
 
 BuildRequires:  pkgconfig(accountsservice)
 BuildRequires:  pkgconfig(cheese)
@@ -52,15 +52,15 @@ BuildRequires:  gettext
 BuildRequires:  appstream-util
 BuildRequires:  meson
 
-Requires: cheese-libs%{?_isa} >= %{cheese_version}
-Requires: glib2%{?_isa} >= %{glib2_version}
-Requires: gnome-bluetooth%{?_isa}
-Requires: gnome-desktop3%{?_isa} >= %{gnome_stack}
-Requires: gnome-online-accounts%{?_isa} >= %{gnome_online_accounts_version}
-Requires: gnome-settings-daemon%{?_isa} >= %{gnome_stack}
-Requires: gsettings-desktop-schemas%{?_isa} >= %{gnome_stack}
-Requires: gtk3%{?_isa} >= %{gtk3_version}
-Requires: upower%{?_isa} >= %{upower_version}
+Requires: cheese
+Requires: glib2
+Requires: gnome-bluetooth3.34
+Requires: gnome-desktop
+Requires: gnome-online-accounts
+Requires: gnome-settings-daemon
+Requires: gsettings-desktop-schemas
+Requires: gtk+3
+Requires: upower
 
 # For user accounts
 Requires: accountsservice
