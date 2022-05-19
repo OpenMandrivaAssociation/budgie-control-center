@@ -33,6 +33,7 @@ BuildRequires:  pkgconfig(libpulse-mainloop-glib)
 BuildRequires:  pkgconfig(libsecret-1)
 BuildRequires:  pkgconfig(libsoup-2.4)
 BuildRequires:  pkgconfig(libxml-2.0)
+BuildRequires:  pkgconfig(libxslt)
 BuildRequires:  pkgconfig(libwacom)
 BuildRequires:  pkgconfig(malcontent-0)
 BuildRequires:  pkgconfig(mm-glib)
@@ -45,10 +46,9 @@ BuildRequires:  pkgconfig(x11)
 BuildRequires:  chrpath
 BuildRequires:  cups-devel
 BuildRequires:  desktop-file-utils
-BuildRequires:  docbook-style-xsl libxslt
-BuildRequires:  gcc
+BuildRequires:  docbook-style-xsl
 BuildRequires:  gettext
-BuildRequires: libappstream-glib
+BuildRequires:  appstream-util
 BuildRequires:  meson
 
 Requires: cheese-libs%{?_isa} >= %{cheese_version}
