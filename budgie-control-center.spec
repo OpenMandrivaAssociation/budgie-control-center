@@ -74,11 +74,13 @@ Recommends: bolt
 Requires: colord
 
 # For the printers panel
-Requires: cups-pk-helper
+#Requires: cups-pk-helper
+Recommends: cups
 Requires: dbus
 
 # For the info/details panel
-Requires: glx-utils
+Requires: glxinfo
+Requires: mesa-demos
 # Not available yet in Cooker
 Recommends: switcheroo-control
 
@@ -91,7 +93,6 @@ Requires: networkmanager-applet
 
 # For parental controls support
 Requires: malcontent
-Requires: malcontent-control
 
 # For Show Details in the color panel
 Recommends: gnome-color-manager
