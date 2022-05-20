@@ -51,6 +51,7 @@ BuildRequires:  docbook-style-xsl
 BuildRequires:  gettext
 BuildRequires:  appstream-util
 BuildRequires:  meson
+BuildRequires:  xsltproc
 
 Requires: cheese
 Requires: glib2
