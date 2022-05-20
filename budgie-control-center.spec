@@ -78,14 +78,15 @@ Requires: dbus
 
 # For the info/details panel
 Requires: glx-utils
+# Not available yet in Cooker
 Recommends: switcheroo-control
 
 # For the user languages
 Requires: iso-codes
 
 # For the network panel
-Recommends: NetworkManager-wifi
-Recommends: nm-connection-editor
+Requires: networkmanager-wifi
+Requires: networkmanager-applet
 
 # For parental controls support
 Requires: malcontent
@@ -107,10 +108,10 @@ A fork of GNOME Control Center for the Budgie 10 Series.
 %autosetup -p1 -n %{name}-%{version}
 
 %build
-%meson
+%meson  \
+        -Ddocumentation=true \
+        -Dmalcontent=true
 #    -Ddark_mode_distributor_logo=%{_datadir}/pixmaps/system-logo-white.png \
-#    -Ddocumentation=true \
-#    -Dmalcontent=true
 %meson_build
 
 
@@ -135,7 +136,7 @@ chrpath --delete %{buildroot}%{_bindir}/budgie-control-center
 %{_datadir}/budgie-control-center/pixmaps
 %{_datadir}/budgie/wm-properties
 %{_datadir}/icons/*
-#{_datadir}/man/man1/budgie-control-center.1*
+%{_mandir}/man1/budgie-control-center.1*
 %{_datadir}/metainfo/budgie-control-center.appdata.xml
 %{_datadir}/pixmaps/budgie-faces
 %{_datadir}/pixmaps/budgie-logo.png
