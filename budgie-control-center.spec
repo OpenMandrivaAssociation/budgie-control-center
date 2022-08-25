@@ -143,7 +143,7 @@ chrpath --delete %{buildroot}%{_bindir}/budgie-control-center
 %{_datadir}/metainfo/budgie-control-center.appdata.xml
 %{_datadir}/pixmaps/budgie-faces
 %{_datadir}/pixmaps/budgie-logo.png
-%{_datadir}/pkgconfig/budgie-keybindings.pc
+#{_datadir}/pkgconfig/budgie-keybindings.pc
 %{_datadir}/polkit-1/actions/org.buddiesofbudgie.controlcenter.*.policy
 %{_datadir}/polkit-1/rules.d/budgie-control-center.rules
 %{_datadir}/sounds/budgie/default/*/*.ogg
