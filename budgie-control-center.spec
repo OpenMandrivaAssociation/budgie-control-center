@@ -1,3 +1,5 @@
+%global optflags %{optflags} -Wno-incompatible-function-pointer-types
+
 Name:           budgie-control-center
 Version:        1.3.0
 Release:        1
