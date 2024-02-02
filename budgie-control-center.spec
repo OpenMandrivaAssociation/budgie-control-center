@@ -2,7 +2,7 @@
 
 Name:           budgie-control-center
 Version:        1.3.0
-Release:        2
+Release:        3
 Summary:        A fork of GNOME Control Center for the Budgie 10 Series
 Group:          Graphical desktop/Budgie
 License:        GPLv2+ and CC-BY-SA
@@ -65,6 +65,7 @@ Requires: gnome-settings-daemon
 Requires: gsettings-desktop-schemas
 Requires: gtk+3
 Requires: upower
+Requires: samba-libs
 
 # For user accounts
 Requires: accountsservice
