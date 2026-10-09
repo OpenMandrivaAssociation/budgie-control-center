@@ -2,7 +2,7 @@
 
 Name:           budgie-control-center
 Version:        2.1.2
-Release:        2
+Release:        3
 Summary:        A fork of GNOME Control Center for the Budgie 10 Series
 Group:          Graphical desktop/Budgie
 License:        GPLv2+ and CC-BY-SA
